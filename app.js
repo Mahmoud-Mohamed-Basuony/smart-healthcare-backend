@@ -4,6 +4,8 @@ const patientRoute = require("./routes/patientRoute")
 
 const app = express()
 
+app.use(cors());
+
 app.use(express.json())
 
 

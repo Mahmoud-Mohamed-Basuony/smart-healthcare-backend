@@ -31,7 +31,7 @@ exports.deletPatient = async (req, res) => {
     catch (error) {
         res.status(404).json({
             status: 'fail',
-            message: err
+            message: error
         });
     }
 
@@ -52,7 +52,7 @@ exports.updatePatient = async (req, res) => {
     catch (error) {
         res.status(404).json({
             status: 'fail',
-            message: err
+            message: error
         });
     }
 

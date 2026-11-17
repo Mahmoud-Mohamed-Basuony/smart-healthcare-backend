@@ -14,3 +14,4 @@ app.listen(port, (req, res)=>{
 //  ma01030370_db_user
 // 6OxKaLs3sZbmgcAp
  
+module.exports = app
