@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3000/api/cources/1
+method: DELETE
+body:
+  type: text
+  content: "{\r
+
+    \ \"name\": \"html\",\r
+
+    \ \"age\": 23\r
+
+    }"
+settings: {}
+order: 4000

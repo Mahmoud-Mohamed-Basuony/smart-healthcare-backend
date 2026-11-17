@@ -10,6 +10,7 @@ router
 
 router
     .route("/:id")
+    .get(patientController.getPatientById)
     .patch(patientController.updatePatient)
     .delete(patientController.deletPatient)
 

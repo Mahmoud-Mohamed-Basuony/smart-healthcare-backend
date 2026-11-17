@@ -1,0 +1,31 @@
+$kind: http-request
+url: 127.0.0.1:3000/api/v1/tours/status
+method: GET
+queryParams:
+  - key: name
+    value: The Snow Adventurer
+    disabled: true
+    $type: |-
+      {
+        "type": "",
+        "format": "",
+        "required": false,
+        "deprecated": false,
+        "default": "",
+        "enum": [],
+        "pattern": "",
+        "minLength": "",
+        "maxLength": "",
+        "minItems": "",
+        "maxItems": "",
+        "minimum": "",
+        "maximum": "",
+        "uniqueItems": false
+      }
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 2000

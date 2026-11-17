@@ -1,0 +1,28 @@
+$kind: http-request
+url: 127.0.0.1:5000/api/v1/patients
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Youssef Khaled Omar\",\r
+
+    \  \"email\": \"youssef.khaled@example.com\",\r
+
+    \  \"password\": \"Password123\",\r
+
+    \  \"phone\": \"01234567890\",\r
+
+    \  \"dob\": \"2004-11-05\",\r
+
+    \  \"gender\": \"male\",\r
+
+    \  \"bloodType\": \"B+\",\r
+
+    \  \"allergies\": [\"Sulfa drugs\"],\r
+
+    \  \"chronicDiseases\": [\"Asthma\"]\r
+
+    }"
+settings: {}
+order: 1000

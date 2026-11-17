@@ -1,0 +1,57 @@
+$kind: http-request
+url: 127.0.0.1:5000/api/v1/doctors
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Dr. Ahmed Mahmoud El-Sayed\",\r
+
+    \  \"email\": \"ahmed.elsayed@healthcare.com\",\r
+
+    \  \"password\": \"Password@1234\",\r
+
+    \  \"phone\": \"01012345678\",\r
+
+    \  \"speciality\": \"Cardiology\",\r
+
+    \  \"degree\": \"Consultant\",\r
+
+    \  \"experience\": 15,\r
+
+    \  \"about\": \"Senior Consultant of Interventional Cardiology with 15 years of clinical experience in heart diseases and hypertension.\",\r
+
+    \  \"fees\": 450,\r
+
+    \  \"clinicAddress\": {\r
+
+    \    \"governorate\": \"Cairo\",\r
+
+    \    \"area\": \"Nasr City\",\r
+
+    \    \"streetDetails\": \"24 Abbas El-Akkad Street, Medical Tower, 5th Floor\"\r
+
+    \  },\r
+
+    \  \"approvalStatus\": \"approved\",\r
+
+    \  \"available\": true,\r
+
+    \  \"workingSchedule\": {\r
+
+    \    \"workingDays\": [\"Saturday\", \"Monday\", \"Wednesday\"],\r
+
+    \    \"startTime\": \"16:00\",\r
+
+    \    \"endTime\": \"21:00\",\r
+
+    \    \"slotDuration\": 20\r
+
+    \  },\r
+
+    \  \"averageRating\": 4.9,\r
+
+    \  \"reviewsCount\": 42\r
+
+    }"
+order: 1000

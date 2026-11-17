@@ -1,0 +1,48 @@
+$kind: http-request
+url: http://localhost:3000/user
+method: GET
+headers:
+  - key: Authorization
+    value: "{{bearer_token_09om}}"
+    $type: |-
+      {
+        "type": "",
+        "format": "",
+        "required": false,
+        "deprecated": false,
+        "default": "",
+        "enum": [],
+        "pattern": "",
+        "minLength": "",
+        "maxLength": "",
+        "minItems": "",
+        "maxItems": "",
+        "minimum": "",
+        "maximum": "",
+        "uniqueItems": false
+      }
+body:
+  type: text
+  content: "{\r
+
+    \ \"username\":\"saad\",\r
+
+    \ \"email\": \"saad@email.com\",\r
+
+    \ \"password\": \"34567\"\r
+
+    \   \r
+
+    \r
+
+    \r
+
+    \  \r
+
+    \r
+
+    \  \r
+
+    }"
+settings: {}
+order: 4000

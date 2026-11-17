@@ -1,0 +1,73 @@
+$kind: http-request
+description: |-
+  This is a GET request and it is used to "get" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).
+
+  A successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data.
+url: http://localhost:3000/users?page=4&limit=4
+method: GET
+queryParams:
+  - key: page
+    value: "4"
+    $type: |-
+      {
+        "type": "",
+        "format": "",
+        "required": false,
+        "deprecated": false,
+        "default": "",
+        "enum": [],
+        "pattern": "",
+        "minLength": "",
+        "maxLength": "",
+        "minItems": "",
+        "maxItems": "",
+        "minimum": "",
+        "maximum": "",
+        "uniqueItems": false
+      }
+  - key: limit
+    value: "4"
+    $type: |-
+      {
+        "type": "",
+        "format": "",
+        "required": false,
+        "deprecated": false,
+        "default": "",
+        "enum": [],
+        "pattern": "",
+        "minLength": "",
+        "maxLength": "",
+        "minItems": "",
+        "maxItems": "",
+        "minimum": "",
+        "maximum": "",
+        "uniqueItems": false
+      }
+body:
+  type: json
+  content: "{\r
+
+    \   \"username\": \"Ali21\",\r
+
+    \        \"email\": \"Ali21@gmail.com\",\r
+
+    \        \"country\": \"Alex\",\r
+
+    \        \"password\": \"203040\"\r
+
+    \   \r
+
+    \   \r
+
+    \   \r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+    language: text/javascript
+order: 1000

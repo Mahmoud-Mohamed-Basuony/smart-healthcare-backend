@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://smart-healthcare-backend-brown.vercel.app/api/v1/patients
+method: GET
+settings: {}
+order: 6000

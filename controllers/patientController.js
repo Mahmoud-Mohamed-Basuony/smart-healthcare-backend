@@ -76,3 +76,22 @@ exports.getAllPatients = async (req, res) => {
     }
 
 }
+
+exports.getPatientById = async (req, res) => {
+    try {
+        const patient = await Patient.findById(req.params.id);
+        res.status(200).json({
+            status: 'success',
+            data: {
+                patient
+            }
+        })
+    }
+    catch (error) {
+        res.status(500).json({
+            status: 'fail',
+            message: error
+        });
+    }
+
+}

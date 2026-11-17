@@ -1,0 +1,22 @@
+$kind: http-request
+url: http://localhost:3000/api/cources
+method: GET
+body:
+  type: text
+  content: "{\r
+
+    \   \r
+
+    \"username\": \"alib1\",\r
+
+    \        \"email\": \"alib1@gmail.com\",\r
+
+    \        \"password\":\"123@Alib\"\r
+
+    \r
+
+    \r
+
+    }"
+settings: {}
+order: 1000

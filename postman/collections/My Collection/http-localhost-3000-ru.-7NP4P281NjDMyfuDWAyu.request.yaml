@@ -1,0 +1,6 @@
+$kind: http-request
+name: http://localhost:3000/ru./7NP4P281NjDMyfuDWAyu
+url: http://localhost:3000/ru./7NP4P281NjDMyfuDWAyu
+method: GET
+settings: {}
+order: 5000

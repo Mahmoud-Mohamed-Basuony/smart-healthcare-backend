@@ -1,0 +1,38 @@
+$kind: http-request
+url: http://localhost:3000/articles
+method: POST
+headers:
+  - key: Authorization
+    value: "{{bearer_token_09om}}"
+    $type: |-
+      {
+        "type": "",
+        "format": "",
+        "required": false,
+        "deprecated": false,
+        "default": "",
+        "enum": [],
+        "pattern": "",
+        "minLength": "",
+        "maxLength": "",
+        "minItems": "",
+        "maxItems": "",
+        "minimum": "",
+        "maximum": "",
+        "uniqueItems": false
+      }
+body:
+  type: json
+  content: "{\r
+
+    \    \"body\":\"hjuibilhi\",\r
+
+    \    \"title\":\"hjgvkyugy\",\r
+
+    \    \"description\":\"yulbjlo\",\r
+
+    \    \"tagList\":[\"gkn\"]\r
+
+    }"
+settings: {}
+order: 1000

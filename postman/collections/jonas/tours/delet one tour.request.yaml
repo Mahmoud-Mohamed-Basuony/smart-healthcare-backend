@@ -1,0 +1,7 @@
+$kind: http-request
+url: 127.0.0.1:3000/api/v1/tours/6ab81e303772d600aaa73031
+method: DELETE
+auth:
+  type: noauth
+settings: {}
+order: 4000

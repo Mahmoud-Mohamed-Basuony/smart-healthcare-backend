@@ -1,0 +1,38 @@
+$kind: http-request
+url: 127.0.0.1:3000/api/v1/tours
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \   \r
+
+    \    \"name\": \"The Park Camper\",\r
+
+    \    \"duration\": 10,\r
+
+    \    \"maxGroupSize\": 15,\r
+
+    \    \"difficulty\": \"medium\",\r
+
+    \    \"ratingsAverage\": 4.9,\r
+
+    \    \"ratingsQuantity\": 19,\r
+
+    \    \"price\": 1497,\r
+
+    \    \"summary\": \"Breathing in Nature in America's most spectacular National Parks\",\r
+
+    \    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!\",\r
+
+    \    \"imageCover\": \"tour-5-cover.jpg\",\r
+
+    \    \"images\": [\"tour-5-1.jpg\", \"tour-5-2.jpg\", \"tour-5-3.jpg\"],\r
+
+    \    \"startDates\": [\"2021-08-05,10:00\", \"2022-03-20,10:00\", \"2022-08-12,10:00\"]\r
+
+    \  }"
+auth:
+  type: noauth
+settings: {}
+order: 3000

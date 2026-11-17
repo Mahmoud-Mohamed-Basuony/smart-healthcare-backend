@@ -1,0 +1,12 @@
+$kind: http-request
+url: 127.0.0.1:5000/api/v1/patients/6afb916c45ff7ce9830d39a0
+method: DELETE
+body:
+  type: text
+  content: "{\r
+
+    \    \"email\": \"ahmed1.hassan@example.com\"\r
+
+    }"
+settings: {}
+order: 4000
